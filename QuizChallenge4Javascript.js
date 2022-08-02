@@ -11,3 +11,14 @@
 //THEN the game is over
 //WHEN the game is over
 //THEN I can save my initials and my score
+
+var Countdownsecs= document.querySelector(".countdown-seconds");
+var startquiz = document.queryselector(".Startquiz");
+var answers = document.queryselector(".Answers");
+var Correctanswer = document.queryselector(".Correctanswer");
+var initials = document.queryselector(".initials");
+var submit = document.queryselector(".submit");
+
+
+
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
