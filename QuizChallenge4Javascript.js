@@ -13,12 +13,36 @@
 //THEN I can save my initials and my score
 
 var Countdownsecs= document.querySelector(".countdown-seconds");
-var startquiz = document.queryselector(".Startquiz");
-var answers = document.queryselector(".Answers");
-var Correctanswer = document.queryselector(".Correctanswer");
-var initials = document.queryselector(".initials");
-var submit = document.queryselector(".submit");
+var jo = document.query
+var startquiz = document.querySelector(".Startquiz");
+var answers = document.querySelector(".Answers");
+var Correctanswer = document.querySelector(".Correctanswer");
+var initials = document.querySelector(".initials");
+var submit = document.querySelector(".submit");
+
+var chosenanswer = "";
+var wronganswers = answers;
+var iswrong = true;
+var rightanswer = Correctanswer;
+
+//timer
+var timer;
+var timercount;
+
+var time = 60;
+console.log(Countdownsecs);
+document.queryselector(".Startquiz").onclick = function(){
+    timer();
+}
+
+//};
+
+function timer(){
+    timercount = setInterval(function() {
+        time--; 
+    console.log(timercount);
+    countdownsecs = timercount;
+    },1000);
+    }
 
 
-
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
